@@ -2,8 +2,42 @@
 {% load static %}
 {% block content1 %} 
 <div class="row my-5">
-   <h1>class</h1>
-  </div>
+   <div class="col-4 d-flex justify-content-center align-items-center">
+      <img src="{% static 'images/mypic.jpg' %}" alt="image" class="about_image">
+   </div>
+
+ <div class="col-7 text-left text-light">
+   <h2> Hello !</h2>
+   <p class="fs-5">
+      I have a solid foundation in HTML, CSS, Python, Django, e.t.c and I'm constantly exploring new technologies and frameworks to enhance my skills. My journey in front-end development began with a fascination for creating visually appealing and interactive web interfaces.
+   </p>
+   <p class="fs-5">
+      I am committed to continuous learning and staying updated with the latest trends in web development and software engineering. I regularly participate in online courses, attend webinars, and engage with the developer community to enhance my skills and knowledge.
+   </p>
+
+ </div>
+</div>
  
+<div class="row my-2">
+     <h2 class="text-center"style="color:#4fffb0;"> My Tech Stack</h2>
+
+      <div class="d-flex justify-content-around align-items-center">
+       <img src="{% static 'images/html.jpg' %}" alt="html logo" width="70" height="70" 
+       class="img-fluid">
+
+         <img src="{% static 'images/css.png' %}" alt="css logo" width="70" height="70" 
+         class="img-fluid">
+
+         <img src="{% static 'images/js.jpg' %}" alt="javascript logo" width="70" height="70" 
+         class="img-fluid">
+
+         <img src="{% static 'images/py.jpg' %}" alt="python logo" width="70" height="70" 
+         class="img-fluid">
+
+         <img src="{% static 'images/django.png' %}" alt="django logo" width="70" height="70" 
+         class="img-fluid">
+      </div>
+   </div>
+
  
 {% endblock content1 %}
